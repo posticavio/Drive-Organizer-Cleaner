@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+* {
+  font-family: 'Google Sans', 'Product Sans', sans-serif !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #18191B;
+  color: #EAEBED;
+  overflow-x: hidden;
+  overscroll-behavior-y: contain;
+}
+
+/* Custom scrollbars matching Samsung One UI Slate dark */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #18191B;
+}
+::-webkit-scrollbar-thumb {
+  background: #2F3136;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3A3D45;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Pulse animation for line ripple */
+@keyframes softPulse {
+  0%, 100% { opacity: 0.9; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.97); }
+}
+
+.animate-soft-pulse {
+  animation: softPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Drive Organizer & Cleaner",
+  "description": "Organizza, sposta e rinomina i file di Google Drive con logiche avanzate e quarantena sicura per i file da eliminare.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
